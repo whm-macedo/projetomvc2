@@ -10,7 +10,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo $url; ?>/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/css/fontawesome/css/all.css">
-    <!-- <link rel="stylesheet" href="<?php echo $url; ?>/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="<?php echo $url; ?>/css/style-login.css"> -->
+    <link rel="stylesheet" href="<?php echo $url; ?>/css/style.css">
     <title>DOE+</title>
   </head>
 
@@ -74,54 +75,24 @@
                 <a class="dropdown-item">Depoimentos</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Ser voluntario
-              </a>
-            </li>
+       <!-- BOTAR PHP -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          Ser voluntario
+        </a>
+      </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo $url; ?>produto/listar">Loja</a>
             </li>
-          </ul>
-
-        <!-- </div> -->
-
-      </nav>
-
-      <hr style="background-color: red;">
+    </ul>
+  </div>
+</nav>
+  </div>
+</div>
+<hr style="background-color: red;">
     
-      <!-- <div class="col-12 justify-content-center">
-        <nav class="navbar navbar-expand-lg navbar-light justify-content-center " style="background-color:white;">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
-            <ul class="navbar-nav">
-              <li class="nav-item ">
-                <a class="nav-link" href="#"><i class="fas fa-tshirt"></i> Roupa</a>
-              </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-gamepad"></i> Brinquedos</a>
-
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-sticky-note"></i> Adesivos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-sticky-note"></i> Acessorios</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-laptop-code"></i>
-                  Informatica
-                </a>
-              </li>
-            </ul>
-
-          </div>
-        </nav>
-      </div> -->
+     
+    
+    
