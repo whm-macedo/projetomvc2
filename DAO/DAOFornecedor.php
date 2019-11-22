@@ -1,4 +1,7 @@
 <?php
+namespace LOJA\DAO;
+use LOJA\Model\Conexao;
+use LOJA\Model\Fornecedor;
 
 class DAOFornecedor{
     public function cadastrarFornecedor(Fornecedor $fornecedor){
@@ -14,7 +17,7 @@ class DAOFornecedor{
     }
 
     public function listaFornecedor(){
-        $sql = "SELECT * FROM Fornecedor";
+        $sql = "SELECT * FROM fornecedor";
         $con = Conexao::getInstance()->prepare($sql);
         $con->execute();
 

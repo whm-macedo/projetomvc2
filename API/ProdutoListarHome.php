@@ -2,14 +2,12 @@
 namespace LOJA\API;
 use LOJA\DAO\DAOProduto;
 
-class ProdutoListarHome{
-
+class ProdutoListar{
     public $lista;
+
     function __construct(){
-
-$obj = new DAOProduto();
-$this->lista = $obj->listaProduto10();
-
-}
+        $obj = new DAOProduto();
+        $this->lista = $obj->listaProduto();
+    }
 }
 ?>

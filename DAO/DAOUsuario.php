@@ -25,7 +25,7 @@ class DAOUsuario{
         return $usuario;
     }
 
-    public function listaUsuario(){
+    public function listaUsuarios(){
         $sql = "SELECT * FROM usuario";
         $con = Conexao::getInstance()->prepare($sql);
         $con->execute();

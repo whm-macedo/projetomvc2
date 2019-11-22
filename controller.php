@@ -1,5 +1,4 @@
 <?php 
-
     session_start();
 
     require "includes/autoload.php";
@@ -9,131 +8,133 @@
     // começa a contar do adin, pois o htaccess está na raiz
 
     @$router = $_GET['model'].$_GET['action'];
+    // router = departamento/cadastrar/listar
 
-    // router = departamentolistar
-    
     $view = "";
 
     // config
-        $url = "http://localhost/loja2-master";
+    $url = "http://localhost/projetomvc/";
 
     switch($router){
 
         case 'categoriacadastrar':
-            
+            \LOJA\includes\Seguranca::restritoAdm();            
             $obj = new \LOJA\API\CategoriaCadastrar;
             $msg = $obj->msg;
             $view = "form-categoria.php";
-            break;
-
+        break;
         case 'categorialistar':
-
-            LOJA\includes\Seguranca::restritoAdm();
-
+            \LOJA\includes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\CategoriaListar;            
             $lista = $obj->lista;
             $view = "lista-categoria.php";
-            break;
-
+        break;
         case 'categoriavisualizar':
+            \LOJA\includes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\CategoriaVisualizar; 
             $categoria = $obj->dados;
             $view = "visualiza-categoria.php";
-            break;
-
-        case 'clientecadastrar':
-        
+        break;        
+        case 'clientecadastrar':        
             $obj = new \LOJA\API\ClienteCadastrar;
             $msg = $obj->msg;
             $view = "form-cliente.php";
-            break;
-
-
-            // admin/cliente/listar
+        break;            
         case 'clientelistar':
+            \LOJA\includes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\ClienteListar;            
             $lista = $obj->lista;
             $view = "lista-cliente.php";
-            break;
-
-            // admin/cliente/visualizar/:id
+        break;           
         case 'clientevisualizar':
-           $obj = new \LOJA\API\ClienteVisualizar; 
+            \LOJA\includes\Seguranca::restritoAdm();
+            $obj = new \LOJA\API\ClienteVisualizar; 
             $cliente = $obj->cliente;
             $view = "visualiza-cliente.php";
-            break;
-
+        break;
         case 'produtocadastrar':
+            \LOJA\includes\Seguranca::restritoAdm();
         
             $obj = new \LOJA\API\ProdutoCadastrar;
             $msg = $obj->msg;
+
             $obj2 = new \LOJA\API\CategoriaListar;                ;
             $lista = $obj2->lista;
-            $view = "form-produto.php";
-            break;
-    
 
+            $view = "form-produto.php";
+        break;
         case 'produtolistar':
             $obj = new \LOJA\API\ProdutoListar;            
             $lista = $obj->lista;
             $view = "lista-produto.php";
-            break;
-
-        case 'home':
-           
-            $obj = new \LOJA\API\ProdutoListarHome;            
-            $lista = $obj->lista;
-            $view = "lista-produto.php";
-            break;
-
+        break;
         case 'usuariocadastrar':
-            include "actions/cadastrar-usuarios.php";
+            \LOJA\includes\Seguranca::restritoAdm();
+            $obj = new \LOJA\API\UsuarioCadastrar;
+            $msg = $obj->msg;
             $view = "form-usuario.php";
-            break;
-
+        break;
         case 'usuariolistar':
-            include "actions/listar-usuario.php";
+            \LOJA\includes\Seguranca::restritoAdm();
+            $obj = new \LOJA\API\UsuarioListar;
+            $lista = $obj->lista;
             $view = "lista-usuario.php";
-            break;
-
+        break;
         case 'usuariovisualizar':
-            include "actions/buscar-usuarios.php";
+            \LOJA\includes\Seguranca::restritoAdm();
+            $obj = new LOJA\API\UsuarioVisualizar;
+            $usuario = $obj->dados;
             $view = "visualiza-usuario.php";
-            break;
-
+        break;
         case 'fornecedorcadastrar':
-            include "actions/cadastrar-fornecedor.php";
+            \LOJA\includes\Seguranca::restritoAdm();
+            $obj = new LOJA\API\FornecedorCadastrar;
+            $msg = $obj->msg;
             $view = "form-fornecedor.php";
-            break;
-
-        
+        break;        
         case 'fornecedorlistar':
-            include "actions/listar-fornecedor.php";
+            \LOJA\includes\Seguranca::restritoAdm();
+            $obj = new LOJA\API\FornecedorListar;
+            $lista = $obj->lista;
             $view = "lista-fornecedor.php";
-            break;
-
+        break;
         case 'fornecedorvisualizar':
-            include "actions/buscar-fornecedor.php";
+            \LOJA\includes\Seguranca::restritoAdm();
+            $obj = new LOJA\API\FornecedorVisualizar;
+            $fornecedor = $obj->dado;            
             $view = "visualiza-fornecedor.php";
-            break;
-
+        break;
         case 'loginadm':
             $obj = new \LOJA\API\UsuarioLogar;
             $msg = $obj->msg;
-            $view = "form-login-adm.php";
-            break;
-
-        case 'paineladm':
-            $view = 'painel-adm.php';
+            $view = 'form-login-adm.php';
         break;
-
         case 'painellogoff':
             $obj = new \LOJA\API\UsuarioLogoff;
-            $view = "form-login-adm.php";
-            break;
+            $view = 'form-login-adm.php';
+        break;
+        case 'paineladm':
+            \LOJA\includes\Seguranca::restritoAdm();
+            $view = 'painel-adm.php';
+        break;
+        case 'projeto':
+            $view = 'projeto.php';
+        break;
+        case 'mapas':
+            $view = 'lista-mapa.php';
+        break;
+        /*    case 'home':
+                $obj = new \LOJA\API\CategoriaListar;
+                $lista = $obj->lista;
 
+                $obj = new \LOJA\API\ProdutoListar;
+                $lista2 = $obj->lista;
+
+                $view = "home.php";
+            break;
+        */
         default:
-        $view = ".php";
+            $view = "home.php";
         break; 
     }
 
