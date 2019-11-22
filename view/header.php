@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo $url; ?>/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo $url; ?>/css/fontawesome/css/all.css">
-    <!-- <link rel="stylesheet" href="<?php echo $url; ?>/css/style-login.css"> -->
+    
     <link rel="stylesheet" href="<?php echo $url; ?>/css/style.css">
     <title>DOE+</title>
   </head>
@@ -20,14 +20,24 @@
   <body>
     <!-- Just an image -->
     <div class="row ">
-      <div class="col-md-2 col-sm-1">
+      <div class="col-md-1 col-sm-1">
           <nav class="navbar navbar-light headermenu">
       <a class="navbar-brand" href="#">
         <img src="<?php echo $url; ?>/img/core-sl.png" width="30" height="30" alt="">
       </a>
     </nav>
       </div>
-      <div class="col-md-6 col-sm-3 d-flex justify-content-center ">
+      <div class="col-md-2 col-sm-1">
+         
+    
+
+      </div>
+      <div class="col-md-1 col-sm-1">
+         
+    
+
+         </div>
+      <div class="col-md-4 col-sm-3 d-flex justify-content-center ">
       <nav class="navbar navbar-light ">
   <form class="form-inline ">
     <div class="input-group barrapesquisa">
@@ -40,16 +50,16 @@
 </nav>
       </div>
       <div class="col-md-2 col-sm-1 d-flex justify-content-center">
-      <i class="fas fa-user icon">Login</i>
+      <i class="fas fa-user icon"> Login</i>
           
       </div>
       <div class="col-md-2 col-sm-1 d-flex justify-content-center ">
-      <a href=" <?php echo $url; ?>carrinho"></a><i class="fas fa-cart-plus icon">Carrinho</i>
+      <a href=" <?php echo $url; ?>carrinho"><i class="fas fa-cart-plus icon"> Meu Carrinho</i></a>
       </div>
 </div>
 <hr style="background-color: red;">
 <div class="row">
-  <div class="col-md-12 d-flex justify-content-center">
+  <div class="col-md-12 d-flex justify-content-center catnav">
   <nav class="navbar navbar-expand-lg navbar-light ">
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,6 +100,41 @@
 </nav>
   </div>
 </div>
+<hr style="background-color: red;">
+<!-- MENU DE PRODUTOS -->
+<div class="row categoria">
+  <div class="col-md-12 d-flex justify-content-center catnav">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- IMPLEMENTAR LINKS PHP NO NAVLINK -->
+  <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fas fa-tshirt"></i>Roupa<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo $url; ?>projeto"><i class="fas fa-gamepad"></i> Brinquedos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo $url; ?>mapas"><i class="fas fa-sticky-note"></i> Adesivos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo $url; ?>mapas"><i class="fas fa-laptop-code"></i>
+                Informatica</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo $url; ?>mapas"><i class="fas fa-sticky-note"></i> Acessorios</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+  </div>
+</div>
+<!-- FIM MENU PRODUTOS -->
 <hr style="background-color: red;">
     
 

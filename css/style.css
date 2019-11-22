@@ -11,5 +11,14 @@ width: 520px !important;
 padding-top: 10px;
 }
 .hr{
+    margin: 0px !important;
+    padding:0px;
+}
+/* MENU CATEGORIA */
+.categoria{
     margin: 0px;
+    padding:0px;
+}
+.catnav{
+    height: 20px;
 }
