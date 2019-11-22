@@ -15,7 +15,23 @@
   </head>
 
   <body>
-    <div class="container">
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">Navbar</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+    </form>
+    
+    <div class="col-md-6">
+          <i class="fas fa-user">Login</i>
+          <a href="<?php echo $url; ?>carrinho"><i class="fas fa-cart-plus">Carrinho</i></a>
+        </div>
+  </nav>
+
+
+
+
+    <!-- <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
           <div class="input-group">
@@ -25,9 +41,9 @@
         </div>
         <div class="col-md-6">
           <i class="fas fa-user">Login</i>
-          <i class="fas fa-cart-plus">Carrinho</i>
+          <a href="<?php echo $url; ?>carrinho"><i class="fas fa-cart-plus">Carrinho</i></a>
         </div>
-      </div>
+      </div> -->
 
       <hr style="background-color: red;">
 

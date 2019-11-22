@@ -1,1 +1,1 @@
-<?php header("location: http://localhost/"); ?>
+<?php header("location: http://localhost/projetomvc2/"); ?>

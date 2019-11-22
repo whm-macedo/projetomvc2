@@ -13,7 +13,7 @@
     $view = "";
 
     // config
-    $url = "http://localhost/projetomvc/";
+    $url = "http://localhost/projetomvc2/";
 
     switch($router){
 
@@ -122,6 +122,9 @@
         break;
         case 'mapas':
             $view = 'lista-mapa.php';
+        break;
+        case 'carrinho':
+            $view = 'carrinho.php';
         break;
         /*    case 'home':
                 $obj = new \LOJA\API\CategoriaListar;

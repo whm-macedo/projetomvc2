@@ -1,9 +1,6 @@
 <?php include "view/header.php"; ?>
 
-
-
-
- <div class="jumbotron">
+<div class="jumbotron">
   <div class="container">
     <h1 class="display-4 justify-content-center" style="color:red"><i class="fas fa-cart-plus"
         style="color: #ff0000;"></i> Produtos</h1>
@@ -27,6 +24,9 @@
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
               </div>
+              <a type="button" class="btn btn-primary" href="">Comprar
+                <!-- <button type="button" class="btn btn-primary">Comprar</button> -->
+              </a>
             </div>
           </div>
         <?php }?>
