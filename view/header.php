@@ -18,57 +18,56 @@
 
 
   <body>
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand">Navbar</a>
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-    </form>
-    
-    <div class="col-md-6">
-          <i class="fas fa-user">Login</i>
-          <a href="<?php echo $url; ?>carrinho"><i class="fas fa-cart-plus">Carrinho</i></a>
-        </div>
-  </nav>
-
-
-
-
-    <!-- <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Pesquisa" aria-label="Pesquisa">          
-            <span class="input-group-text"> <i class="fas fa-search"></i> </span>          
-          </div>
-        </div>
-        <div class="col-md-6">
-          <i class="fas fa-user">Login</i>
-          <a href="<?php echo $url; ?>carrinho"><i class="fas fa-cart-plus">Carrinho</i></a>
-        </div>
-      </div> -->
-
-      <hr style="background-color: red;">
-
-      <nav class="navbar  navbar-expand-lg navbar-light mb-9">
-        <a class="navbar-brand" href="#">
-          <img src="<?php echo $url; ?>/img/DOE+.png" width="30" height="30" alt="">
-        </a>
-        <!-- <div class="collapse justify-content-center navbar-collapse mt-2 mt-lg " id="navbarNav"> -->
-          <ul class="navbar-nav ">
-            <li class="nav-item ">
-              <a class="nav-link" href="<?php echo $url; ?>home">Home <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo $url; ?>projeto">Projeto</a>
-
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo $url; ?>mapas">Mapas</a>
-            </li>
-            <li class="nav-item dropdown ">
+    <!-- Just an image -->
+    <div class="row ">
+      <div class="col-md-2 col-sm-1">
+          <nav class="navbar navbar-light headermenu">
+      <a class="navbar-brand" href="#">
+        <img src="<?php echo $url; ?>/img/core-sl.png" width="30" height="30" alt="">
+      </a>
+    </nav>
+      </div>
+      <div class="col-md-6 col-sm-3 d-flex justify-content-center ">
+      <nav class="navbar navbar-light ">
+  <form class="form-inline ">
+    <div class="input-group barrapesquisa">
+      <div class="input-group-prepend  ">
+        <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+      </div>
+      <input type="text" class="form-control " placeholder="Pesquisar" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+  </form>
+</nav>
+      </div>
+      <div class="col-md-2 col-sm-1 d-flex justify-content-center">
+      <i class="fas fa-user icon">Login</i>
+          
+      </div>
+      <div class="col-md-2 col-sm-1 d-flex justify-content-center ">
+      <i class="fas fa-cart-plus icon">Carrinho</i>
+      </div>
+</div>
+<hr style="background-color: red;">
+<div class="row">
+  <div class="col-md-12 d-flex justify-content-center">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo $url; ?>projeto">Projeto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo $url; ?>mapas">Mapas</a>
+      </li>
+      <!-- BOTAR PHP -->
+      <li class="nav-item dropdown "> 
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Como funciona</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item">Posso ser doador</a>
