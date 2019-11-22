@@ -44,7 +44,7 @@
           
       </div>
       <div class="col-md-2 col-sm-1 d-flex justify-content-center ">
-      <i class="fas fa-cart-plus icon">Carrinho</i>
+      <a href=" <?php echo $url; ?>carrinho"></a><i class="fas fa-cart-plus icon">Carrinho</i>
       </div>
 </div>
 <hr style="background-color: red;">
