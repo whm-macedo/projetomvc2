@@ -13,7 +13,7 @@
     $view = "";
 
     // config
-    $url = "http://localhost/projetomvc/";
+    $url = "http://localhost/projetomvc2/";
 
     switch($router){
 
