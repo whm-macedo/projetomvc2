@@ -105,8 +105,8 @@
 
 <hr style="background-color: red; margin: 2px;"  >
 <!-- MENU DE PRODUTOS -->
-<div class="row categoria">
-  <div class="col-md-12 d-flex justify-content-center ">
+<div class="row categoria d-flex justify-content-center">
+  <!-- <div class="col-md-12 d-flex justify-content-center "> -->
   <nav class="navbar navbar-expand-lg navbar-light ">
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

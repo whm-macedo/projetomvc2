@@ -31,5 +31,8 @@ padding-top: 10px;
         width: 300px !important;
         margin-left:20px !important;
     }
+    .catnav{
+        height: auto;
+    }
       
 }
