@@ -10,10 +10,7 @@
 width: 520px !important;
 padding-top: 10px;
 }
-.hr{
-    margin: 0px !important;
-    padding:0px;
-}
+
 /* MENU CATEGORIA */
 .categoria{
     margin: 0px;
@@ -21,4 +18,18 @@ padding-top: 10px;
 }
 .catnav{
     height: 20px;
+}
+
+/* Estilos aplicados a larguras até 480 pixels */
+
+@media screen and (max-width: 600px) {
+    .barrapesquisa{
+        width: 300px !important;
+       
+        }
+    .formadm{
+        width: 300px !important;
+        margin-left:20px !important;
+    }
+      
 }

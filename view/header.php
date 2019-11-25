@@ -20,8 +20,8 @@
   <body>
     <!-- Just an image -->
     <div class="row ">
-      <div class="col-md-1 col-sm-1">
-          <nav class="navbar navbar-light headermenu">
+      <div class="col-md-1 col-sm-1 d-none d-sm-block">
+          <nav class="navbar navbar-light headermenu d-flex justify-content-center ">
       <a class="navbar-brand" href="#">
         <img src="<?php echo $url; ?>/img/core-sl.png" width="30" height="30" alt="">
       </a>
@@ -50,22 +50,22 @@
 </nav>
       </div>
       <div class="col-md-2 col-sm-1 d-flex justify-content-center">
-      <i class="fas fa-user icon"> Login</i>
+       <a href="<?php echo $url; ?>loginadm"> <i class="fas fa-user icon"> Login</i></a>
           
       </div>
       <div class="col-md-2 col-sm-1 d-flex justify-content-center ">
       <a href=" <?php echo $url; ?>carrinho"><i class="fas fa-cart-plus icon"> Meu Carrinho</i></a>
       </div>
 </div>
-<hr style="background-color: red;">
-<div class="row">
-  <div class="col-md-12 d-flex justify-content-center catnav">
-  <nav class="navbar navbar-expand-lg navbar-light ">
+<hr style="background-color: red;  margin: 0;" class="d-none d-sm-block ">
+<div class="row justify-content-center ">
+  <!-- <div class="col-md-12 d-flex "> -->
+  <nav class="navbar navbar-expand-lg navbar-light d-none d-sm-block  "   >
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse catnav" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -99,18 +99,21 @@
   </div>
 </nav>
   </div>
-</div>
-<hr style="background-color: red;">
+  </div>
+
+
+
+<hr style="background-color: red; margin: 2px;"  >
 <!-- MENU DE PRODUTOS -->
 <div class="row categoria">
-  <div class="col-md-12 d-flex justify-content-center catnav">
+  <div class="col-md-12 d-flex justify-content-center ">
   <nav class="navbar navbar-expand-lg navbar-light ">
  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <!-- IMPLEMENTAR LINKS PHP NO NAVLINK -->
-  <div class="collapse navbar-collapse " id="navbarNav">
+  <div class="collapse navbar-collapse  catnav " id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="#"><i class="fas fa-tshirt"></i>Roupa<span class="sr-only">(current)</span></a>
@@ -135,7 +138,7 @@
   </div>
 </div>
 <!-- FIM MENU PRODUTOS -->
-<hr style="background-color: red;">
+<hr style="background-color: red; margin: 0;" class="hrproduto">
     
 
 
