@@ -10,7 +10,7 @@ class Carrinho{
 
     public function __construct()
     {
-        
+        $this->lista = [];
     }
     public function getId()
     {
@@ -26,13 +26,14 @@ class Carrinho{
         $dao = new DAOProduto();
         $obj = new Produto();
         $obj = $dao->buscaPorId($id);
-
-        if($obj->getId()){
+        
+        if($obj->getPk_produto()){
             $item = new Item();
             $item->setProduto($obj);
             $item->setQuantidade(1);
-        array_push($this->lista,$item);
+            print_r($item);
         };
+        array_push($this->lista,$item);
     }  
     public function removeItem($id)
     {

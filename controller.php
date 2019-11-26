@@ -1,7 +1,8 @@
 <?php 
+    require "includes/autoload.php";
     session_start();
 
-    require "includes/autoload.php";
+    
     // capturando os dados da url
     // Ex.: http://localhost/lojavirtual/admin/departamento/cadastrar/listar
     // model = departamento & action=listar
@@ -122,6 +123,17 @@
         break;
         case 'mapas':
             $view = 'lista-mapa.php';
+        break;
+
+        case 'carrinhoadicionar':
+            $obj = new \LOJA\API\CarrinhoVisualizar;
+ 
+            $view = 'carrinho.php';
+        break;
+        case 'carrinhoremover':
+            $obj = new \LOJA\API\CarrinhoRemover;
+            $lista = $obj->lista;
+            $view = 'carrinho.php';
         break;
         case 'carrinho':
             $view = 'carrinho.php';
