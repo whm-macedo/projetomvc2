@@ -93,7 +93,7 @@
         </a>
       </li>
             <li class="nav-item">
-              <!-- <a class="nav-link" href="<?php echo $url; ?>produto/listar">Loja</a> -->
+              <a class="nav-link" href="<?php echo $url; ?>produto/listar">Loja</a>
             </li>
     </ul>
   </div>
