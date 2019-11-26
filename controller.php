@@ -133,7 +133,6 @@
             $lista = $obj->lista;
             $view = 'carrinho.php';
         break;
-
         case 'carrinho':
             $view = 'carrinho.php';
         break;
