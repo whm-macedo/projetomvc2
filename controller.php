@@ -126,7 +126,7 @@
         case 'carrinho':
             $view = 'carrinho.php';
         break;
-        /*    case 'home':
+        case 'home':
                 $obj = new \LOJA\API\CategoriaListar;
                 $lista = $obj->lista;
 
@@ -134,8 +134,9 @@
                 $lista2 = $obj->lista;
 
                 $view = "home.php";
-            break;
-        */
+                $view = "lista-produto.php";
+        break;
+        
         default:
             $view = "home.php";
         break; 

@@ -43,4 +43,13 @@ class Carrinho{
             };
         }
     }
+    public function getItems(){
+        return $this->lista;
+    }
+    public function getLista(){
+        return $this->lista;
+    }
+    public function setLista($lista){
+        $this->lista = $lista; 
+    }
 }
