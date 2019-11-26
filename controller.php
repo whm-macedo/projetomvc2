@@ -134,7 +134,8 @@
                 $lista2 = $obj->lista;
 
                 $view = "home.php";
-                $view = "lista-produto.php";
+
+                // $view = "lista-produto.php";
         break;
         
         default:
