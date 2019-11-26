@@ -11,7 +11,7 @@
 
     <div class="container">
       <div class="row mt-3"> 
-        <?php foreach ($lista2 as $produto) {?>
+        <?php foreach ($lista as $produto) {?>
           <div class="col-sm-3 mb-3">
             <div class="card h-100 ">
               <a href="#"><img class="card-img-top" src="<?php echo $url."/View/img/produtos/".$produto['imagem']?>" alt=""></a>
