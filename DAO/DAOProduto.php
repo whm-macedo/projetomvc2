@@ -37,6 +37,7 @@ class DAOProduto{
         while($produto = $con->fetch(\PDO::FETCH_ASSOC)){
             $lista[] = $produto;
         }
+
         return $lista;
     }
 

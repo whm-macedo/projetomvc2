@@ -1,7 +1,9 @@
 <?php include "header.php"?>
 
   <h1> Meu Carrinho de Compras </h1>
+
 <hr>
+
 <div class="row">
 
     <div class="card mb-3 col" style="max-width: 540px;">
@@ -46,6 +48,7 @@
     
 </div> 
 
+<hr>
 <div class="row">
 
     <div class="card mb-3 col" style="max-width: 540px;">
