@@ -32,8 +32,6 @@ class Carrinho{
             $item->setProduto($obj);
             $item->setQuantidade(1);
         };
-        array_push($this->lista, $item);
-    }
     public function removeItem($id)
     {
         foreach ($this->lista as $item) {
