@@ -138,10 +138,5 @@
   </div>
 </div>
 <!-- FIM MENU PRODUTOS -->
-<hr style="background-color: red; margin: 0;" class="hrproduto">
-    
-
-
-     
-    
+<hr style="background-color: red; margin: 0;" class="hrproduto">   
     
