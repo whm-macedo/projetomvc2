@@ -19,6 +19,15 @@ padding-top: 10px;
 .catnav{
     height: 20px;
 }
+/* CARROSEL */
+.carousel-item{
+    background-color:red;
+    height: 350px;
+}
+.carousel-img{
+    width:160px !important;
+}
+
 
 /* Estilos aplicados a larguras até 480 pixels */
 
