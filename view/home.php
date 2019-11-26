@@ -9,14 +9,21 @@
     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="carousel-img" src="<?php echo $url; ?>/img/DOE+.png" alt="first slide">
+    <div class="carousel-item active text-center">
+      <img class="carousel-img mt-4"  src="<?php echo $url; ?>/img/DOE+.png" alt="first slide">
+      <div class="mt-4">
+            <h5 style=" color:#FFFFFF ;">POSSO SER UM DOADOR?</h5>
+          </div>
+          <div><a class="btn  btn-primary" href="como-funciona.html" role="button"
+              style="background-color:#FFFFFF; color: red;">Saiba Mais</a></div>
+        
     </div>
     <div class="carousel-item">
-      <img class="carousel-img" src="<?php echo $url; ?>/img/DOE+.png" alt="...">
+      <img class="carousel-img" src="<?php echo $url; ?>" alt="...">
+     
     </div>
     <div class="carousel-item">
-      <img class="carousel-img" src="<?php echo $url; ?>/img/DOE+.png" alt="...">
+      <img class="carousel-img" src="<?php echo $url; ?>" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
