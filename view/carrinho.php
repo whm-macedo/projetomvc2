@@ -17,7 +17,7 @@
                 foreach ($carrinho->getItems() as $item){
                    
                     $produto = $item->getProduto();
-                    $link = "http://localhost/projetomvc2/carrinho/remover/".$produto->getPk_produto();
+                    $linkRemove = "http://localhost/projetomvc2/carrinho/remover/".$produto->getPk_produto();
                 
                     // Inicio HTML
                 ?>
@@ -65,11 +65,9 @@
                 <h5 class="card-title">15.500,00</h5>
                 <p class="card-text">Essa camisa está com desconto</p>
                 <div>
-            <a href="<?php echo $link; ?>" class="btn btn-danger">Remover</a>
+                <a href="<?php echo $linkRemove; ?>" class="btn btn-danger">Remover</a>
             </div>
-            <br>
-                <a href="#" class="btn btn-primary">Go Gastar</a>
-            </div>
+            
 </div>
 </div>
 

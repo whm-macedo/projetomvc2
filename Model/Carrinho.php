@@ -38,7 +38,7 @@ class Carrinho{
     public function removeItem($id)
     {
         foreach ($this->lista as $item) {
-            if ($item->getProduto()->gitId()===$id) {
+            if ($item->getProduto()->getPk_produto()===$id) {
                 $index = array_search($item, $this->lista, true);
                 unset($this->lista[$index]);
             };
