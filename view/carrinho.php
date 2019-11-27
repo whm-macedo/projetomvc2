@@ -1,14 +1,19 @@
 <?php include "header.php"?>
 <div class="container">
     <div class="row">
-    <h1 class="text-center mb-5"> Meu Pedidos </h1>
+    
         <?php
             @$carrinho = $_SESSION['carrinho'];
 
             if($carrinho === null || empty($carrinho->getItems())){
                 // Inicio HTML
                 ?>
-                    <p>Seu Carrinho está vazio</p>
+                    <div class="jumbotron ">
+                    <div class="container">
+                        <h1 class="display-4"><i class="far fa-tired"></i>OPS!</h1>
+                        <p class="lead">Seu carrinho estar vazio</p>
+                    </div>
+                    </div>
 
                 <?php
                 // Fim HTML
@@ -20,9 +25,10 @@
                     $linkRemove = "http://localhost/projetomvc2/carrinho/remover/".$produto->getPk_produto();
                 
                     // Inicio HTML
+                    
                 ?>
        
-                    
+<h1 class="text-center mb-5"> Meu Pedidos </h1>              
 <hr> 
 
 <div class="container">
