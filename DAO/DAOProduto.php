@@ -50,7 +50,7 @@ class DAOProduto{
         categoria.nome AS 'categoria' 
         FROM produto 
         INNER JOIN categoria 
-        ON produto.categoria = categoria.pk_categoria limit 2";
+        ON produto.categoria = categoria.pk_categoria limit 4";
         
         $con = Conexao::getInstance()->prepare($sql);
         $con->execute();
