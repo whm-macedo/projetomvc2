@@ -27,7 +27,11 @@ padding-top: 10px;
 .carousel-img{
     width:160px !important;
 }
-
+/* CARRINHO */
+.itemcarrinho{
+    border: 0.5px solid Grey;
+    padding: 5px;
+}
 
 /* Estilos aplicados a larguras até 480 pixels */
 
