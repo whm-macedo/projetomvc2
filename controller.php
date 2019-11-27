@@ -132,7 +132,7 @@
         break;
         case 'carrinhoremover':
             $obj = new \LOJA\API\CarrinhoRemover;
-            $lista = $obj->lista;
+            // $lista = $obj->lista;
             $view = 'carrinho.php';
         break;
         case 'carrinho':
@@ -142,7 +142,10 @@
                 $obj = new \LOJA\API\CategoriaListar;
                 $lista = $obj->lista;
 
-                $obj = new \LOJA\API\ProdutoListar;
+                // $obj = new \LOJA\API\ProdutoListar;
+                // $lista2 = $obj->lista;
+
+                $obj = new \LOJA\API\ProdutoListarHome;
                 $lista2 = $obj->lista;
 
                 $view = "home.php";
@@ -151,6 +154,9 @@
         break;
         
         default:
+                $obj = new \LOJA\API\ProdutoListarHome;
+                $lista2 = $obj->lista;
+
             $view = "home.php";
         break; 
     }

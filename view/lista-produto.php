@@ -8,13 +8,9 @@
 
     <div class="container">
       <div class="row mt-3"> 
-        <?php foreach ($lista as $produto) {
-          
-           $linkRemove = "http://localhost/projetomvc2/carrinho/adicionar/".$produto['id'];
-
-           
-          
-          ?>
+        <?php foreach ($lista as $produto) {          
+           $linkRemove = "http://localhost/projetomvc2/carrinho/adicionar/".$produto['id'];          
+        ?>
 
 
         
