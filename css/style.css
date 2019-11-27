@@ -32,6 +32,10 @@ padding-top: 10px;
     border: 0.5px solid Grey;
     padding: 5px;
 }
+.card-carrinho {
+    border:0px !important;
+}
+
 
 /* Estilos aplicados a larguras até 480 pixels */
 
