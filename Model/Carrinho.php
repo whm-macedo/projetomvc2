@@ -31,7 +31,7 @@ class Carrinho{
             $item = new Item();
             $item->setProduto($obj);
             $item->setQuantidade(1);
-            print_r($item);
+            //print_r($item); Testar a Saída
         };
         array_push($this->lista,$item);
     }  
