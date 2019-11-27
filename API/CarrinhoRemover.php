@@ -13,7 +13,7 @@ class CarrinhoRemover{
             $carrinho = $_SESSION['carrinho']; //pega o carrinho
 
             foreach($carrinho->getLista() as $item){ // Verifica os itens do carrinho
-                if ($item->getProduto()->getId()===$id) { // Se o produto existir no carrinho
+                if ($item->getProduto()->getPk_produto()===$id) { // Se o produto existir no carrinho
                     $carrinho->removeItem($id); // excluir o carrinho
                     $_SESSION['carrinho'] = $carrinho; // Atualiza o carrinho na sessão
                 };

@@ -1,6 +1,3 @@
-
-
-
 <?php include "view/header.php"; ?>
 
 <div class="jumbotron">
@@ -11,7 +8,16 @@
 
     <div class="container">
       <div class="row mt-3"> 
-        <?php foreach ($lista as $produto) {?>
+        <?php foreach ($lista as $produto) {
+          
+           $linkRemove = "http://localhost/projetomvc2/carrinho/adicionar/".$produto['id'];
+
+           
+          
+          ?>
+
+
+        
           <div class="col-sm-3 mb-3">
             <div class="card h-100 ">
               <a href="#"><img class="card-img-top" src="<?php echo $url."/View/img/produtos/".$produto['imagem']?>" alt=""></a>
@@ -27,9 +33,11 @@
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
               </div>
-              <a type="button" class="btn btn-primary" href="">Comprar
+              <a type="button" class="btn btn-primary" href="<?php echo $linkRemove; ?>">Comprar
                 <!-- <button type="button" class="btn btn-primary">Comprar</button> -->
               </a>
+
+              
             </div>
           </div>
         <?php }?>
