@@ -102,48 +102,7 @@
     </ul>
 
   </div>
-  <hr style="background-color: red;  margin: 0;" class="d-none d-sm-block ">
-  <div class="row justify-content-center ">
-    <!-- <div class="col-md-12 d-flex "> -->
-    <nav class="navbar navbar-expand-lg navbar-light d-none d-sm-block  ">
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse catnav" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo $url; ?>projeto">Projeto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo $url; ?>mapas">Mapas</a>
-          </li>
-          <!-- BOTAR PHP -->
-          <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Como funciona</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item">Posso ser doador</a>
-              <a class="dropdown-item">Para aonde meu sangue vai</a>
-              <a class="dropdown-item">Quais pessoa seu ajudo</a>
-              <a class="dropdown-item">Depoimentos</a>
-            </div>
-          </li>
-          <!-- BOTAR PHP -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Ser voluntario
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo $url; ?>produto/listar">Loja</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+  
   </div>
 
 
