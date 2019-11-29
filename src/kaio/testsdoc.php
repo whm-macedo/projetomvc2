@@ -52,4 +52,6 @@
     "daniel@rj.senac.br", "123456" -> Usuário Autenticado
     "daniel@rj.senac.br", "123459" -> Usuário inválido
 
+    testando
+
 ?>
